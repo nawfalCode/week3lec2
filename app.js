@@ -12,6 +12,14 @@ app.get("/wiki/:keyword/fit2095/:id",function(req,res){
     
 });
 
+app.get("/report",function(req,res){
+    console.log(req.url);
+    console.log(req.query);
+
+    console.log("the name is =="+req.query.name);
+    console.log("the age is =="+req.query.age);
+});
+
 app.get("/about",function(req,res){
     res.send(" this is the about page!!!");
 });
